@@ -40,7 +40,7 @@ ul {
     padding-left: 0px;
     padding-right: 10px;
     border-radius: 9999px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     margin-top: 20px;
 
@@ -94,12 +94,12 @@ ul {
     height:500px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     align-content: center;
 }
 
 #hero-panel {
-    width: 800px;
+    width: 900px;
     height: 400px;
 
     display: flex;
