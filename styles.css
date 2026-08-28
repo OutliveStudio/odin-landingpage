@@ -1,3 +1,50 @@
-.body {
+* {
+    /*border: 1px solid red;*/
+}
+
+:root {
+    --bg-dark: #0D0E13;
+    --bg-light: #1A1D24;
+    --gold-accent-dark: #C29A54;
+    --gold-accent-light: #F3E5AB;
+    --text-white: #F5F5F7;
+}
+
+body {
     font-family: "Roboto", sans-serif;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#header {
+    display: flex;
+    height: 70px;
+    margin: 0px;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: var(--bg-dark);
+}
+
+#header-links{
+    display: flex;
+    align-items: center;
+    color: var(--text-white)
+}
+
+#header-links a {
+    color: var(--text-white)
+}
+
+#hero {
+    height:500px;
+    background-color: var(--bg-light);
 }
