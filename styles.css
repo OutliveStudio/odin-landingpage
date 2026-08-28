@@ -1,5 +1,5 @@
 * {
-    /*border: 1px solid red;*/
+    border: 1px solid red;
 }
 
 :root {
@@ -34,14 +34,31 @@ ul {
     background-color: var(--bg-dark);
 }
 
+#right-header-panel {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
 #header-links{
     display: flex;
     align-items: center;
-    color: var(--text-white)
+    color: var(--text-white);
+    gap: 20px;
+}
+
+#contact-button {
+    all: unset;
+    background-color: var(--gold-accent-dark);
+    text-align: center;
+    height: 60%;
+    width: 120px;
+    border-radius: 9999px; 
+    font-size: 20px;
 }
 
 #header-links a {
-    color: var(--text-white)
+    color: var(--text-white);
 }
 
 #hero {
