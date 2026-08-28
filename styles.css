@@ -58,16 +58,32 @@ ul {
     gap: 20px;
 }
 
-#contact-button {
+.button-gold {
     all: unset;
     background-color: var(--gold-accent-dark);
     color: var(--bg-light);
     text-align: center;
-    height: 60%;
-    width: 160px;
     border-radius: 9999px; 
     font-size: 20px;
+    background: linear-gradient(to right, var(--gold-accent-dark), var(--gold-accent-light));
+    filter: drop-shadow(0px 1px 3px var(--gold-accent-light));
 }
+
+.button-dark {
+    all: unset;
+    background-color: var(--bg-light);
+    color: var(--text-offwhite);
+    text-align: center;
+    border-radius: 9999px; 
+    font-size: 20px;
+    border: 1px solid var(--text-offwhite)
+}
+
+#contact-button {
+    height: 60%;
+    width: 160px;
+}
+
 
 #header-links a {
     color: var(--text-offwhite);
@@ -83,7 +99,7 @@ ul {
 }
 
 #hero-panel {
-    width: 700px;
+    width: 800px;
     height: 400px;
 
     display: flex;
@@ -112,4 +128,21 @@ ul {
     background-clip: text;
     color: transparent; /* Makes the solid text invisible so the background shows through */
     font-size: 70px;
+}
+
+#hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 60%;
+}
+
+#project-button {
+    height: 40px;
+    width: 200px;
+}
+
+#portfolio-button {
+    height: 40px;
+    width: 170px;
 }
