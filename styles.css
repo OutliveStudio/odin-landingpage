@@ -55,22 +55,22 @@ ul {
 #header-links{
     display: flex;
     align-items: center;
-    color: var(--text-white);
     gap: 20px;
 }
 
 #contact-button {
     all: unset;
     background-color: var(--gold-accent-dark);
+    color: var(--bg-light);
     text-align: center;
-    height: 70%;
+    height: 60%;
     width: 160px;
     border-radius: 9999px; 
     font-size: 20px;
 }
 
 #header-links a {
-    color: var(--text-white);
+    color: var(--text-offwhite);
     font-size: 18px;
 }
 
