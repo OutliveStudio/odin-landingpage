@@ -1,5 +1,5 @@
 * {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 :root {
@@ -8,11 +8,16 @@
     --gold-accent-dark: #C29A54;
     --gold-accent-light: #F3E5AB;
     --text-white: #F5F5F7;
+    --text-offwhite: #aeaeae;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     margin: 0px;
+    background-color: var(--bg-light);
+
+    background-image:  linear-gradient(var(--bg-dark) 1px, transparent 1px), linear-gradient(to right, var(--bg-dark) 1px, var(--bg-light) 1px);
+    background-size: 30px 30px;
 }
 
 a {
@@ -25,13 +30,20 @@ ul {
 }
 
 #header {
+
+    position: sticky;
+    background-color: var(--bg-dark);
     display: flex;
-    height: 70px;
+    height: 60px;
     margin: 0px;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
-    background-color: var(--bg-dark);
+    padding-left: 0px;
+    padding-right: 10px;
+    border-radius: 9999px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 10px;
+
 }
 
 #right-header-panel {
@@ -51,35 +63,50 @@ ul {
     all: unset;
     background-color: var(--gold-accent-dark);
     text-align: center;
-    height: 60%;
-    width: 120px;
+    height: 70%;
+    width: 160px;
     border-radius: 9999px; 
     font-size: 20px;
 }
 
 #header-links a {
     color: var(--text-white);
+    font-size: 18px;
 }
 
 #hero {
     height:500px;
-    background-color: var(--bg-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#hero-panel {
+    width: 700px;
+    height: 400px;
 
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-#hero-left {
-    width: 500px;
-    height: 300px;
+#hero h1 {
+    text-align: center;
+    font-size: 40px;
+    color: var(--text-white);
+    text-transform: uppercase;
 }
 
-#hero-right {
-
+#hero p {
+    text-align: center;
+    color: var(--text-offwhite);
+    font-size: 20px;
+    max-width: 80%;
 }
 
-#hero img {
-    width: 500px;
-    height: 200px;
+.outlive-highlight{
+    color: var(--gold-accent-dark);
+    font-size: 70px;
 }
